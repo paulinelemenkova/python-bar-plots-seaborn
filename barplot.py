@@ -1,11 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
-import os
-import pandas as pd
-from matplotlib import pyplot as plt
-import seaborn as sb
+"""Bar Plots with Python and Seaborn
 
-os.chdir('/Users/pauline/Documents/Python')
+Author:  Polina Lemenkova
+ORCID:   https://orcid.org/0000-0002-5759-1089
+Archive: https://doi.org/10.13140/RG.2.2.22754.79046
+License: MIT
+
+See README.md for details.
+"""
+import os
+
+import pandas as pd
+import seaborn as sb
+from matplotlib import pyplot as plt
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 df = pd.read_csv("Tab-Morph.csv")
 sb.set_style("whitegrid")
 sb.set_context('paper')
